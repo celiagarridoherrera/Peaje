@@ -32,7 +32,7 @@ public class CamionTest {
 
     @Test
     void testCamionGuardaPlaca() {   
-            Camion camion = new Camion("1234DEW");
+            Camion camion = new Camion("1234DEW", 3);
             assertEquals("1234DEW", camion.getPlaca());
     
         }
