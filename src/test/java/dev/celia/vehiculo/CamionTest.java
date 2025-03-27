@@ -29,4 +29,10 @@ public class CamionTest {
         Camion camion = new Camion("1234JUL", 5);
         assertEquals(250.00, camion.calcularPeaje());
     }
+
+    @Test
+    void testCamionGuardaPlaca() {   
+            Camion camion = new Moto("1234DEW");
+            assertEquals("1234DEW", camion.getPlaca());
+        }
 }
