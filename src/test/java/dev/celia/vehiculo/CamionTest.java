@@ -32,7 +32,13 @@ public class CamionTest {
 
     @Test
     void testCamionGuardaPlaca() {   
-            Camion camion = new Moto("1234DEW");
+            Camion camion = new Camion("1234DEW");
             assertEquals("1234DEW", camion.getPlaca());
+    
+        }
+    @Test
+    void testCamionGuardaEjes() {   
+            Camion camion = new Camion("1234GHI", 2);
+                assertEquals(2, camion.getEjes());
         }
 }
