@@ -11,4 +11,11 @@ public class CamionTest {
         Camion camion = new Camion("1234GHI", 2);
         assertEquals(100.00, camion.calcularPeaje());
     }
+
+    @Test
+    public void testCamion3Ejes() {
+        Camion camion = new Camion("1234GHI", 3);
+        assertEquals(150.00, camion.calcularPeaje());
+    }
+
 }
