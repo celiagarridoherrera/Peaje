@@ -18,4 +18,15 @@ public class CamionTest {
         assertEquals(150.00, camion.calcularPeaje());
     }
 
+    @Test
+    public void testCamion4Ejes() {
+        Camion camion = new Camion("1234JKL", 4);
+        assertEquals(200.00, camion.calcularPeaje());
+    }
+
+    @Test
+    public void testCamion5Ejes() {
+        Camion camion = new Camion("1234JUL", 5);
+        assertEquals(250.00, camion.calcularPeaje());
+    }
 }
