@@ -1,4 +1,4 @@
-package dev.vehiculo;
+package dev.celia.vehiculo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
