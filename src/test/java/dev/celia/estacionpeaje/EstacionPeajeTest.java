@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
+import dev.celia.vehiculo.Camion;
 import dev.celia.vehiculo.Coche;
 import dev.celia.vehiculo.Moto;
 import dev.celia.vehiculo.Vehiculo;
@@ -25,5 +26,13 @@ public class EstacionPeajeTest {
         Vehiculo moto = new Moto("1234DEF");
         estacion.registrarVehículo(moto);
         assertEquals(50.00, estacion.getTotalRecaudado());
+    }
+    
+    @Test
+    void testRegistrarVehiculoCamion(){
+        EstacionPeaje estacion = new EstacionPeaje("Peaje 4", "Oviedo");
+        Vehiculo camion = new Camion("1234GHI", 2);
+        estacion.registrarVehículo(camion);
+        assertEquals(100.00, estacion.getTotalRecaudado());
     }
 }
