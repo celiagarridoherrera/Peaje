@@ -35,4 +35,13 @@ public class EstacionPeajeTest {
         estacion.registrarVehículo(camion);
         assertEquals(100.00, estacion.getTotalRecaudado());
     }
+
+    @Test
+    void testRegistrarVehiculoCamionConCarga(){
+        EstacionPeaje estacion = new EstacionPeaje("Peaje 5", "Avilés");
+        estacion.registrarVehículo(new Camion("1234JKL", 3))
+        estacion.registrarVehículo(new Moto("1234DEF"));
+        estacion.registrarVehículo(new Coche("1234ABC"));
+        assertEquals(150+50+100, estacion.getTotalRecaudado());
+    }
 }
